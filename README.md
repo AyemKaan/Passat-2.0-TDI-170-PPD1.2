@@ -1,5 +1,12 @@
 # VW Passat B6 2.0 TDI 170 HP (BMR) — Siemens VDO PPD1.2 ECU Calibration
 
+[![ECU](https://img.shields.io/badge/ECU-Siemens_VDO_PPD1.2-007ec6?style=flat-square)](#)
+[![Engine](https://img.shields.io/badge/Engine-2.0_TDI_16V_BMR_(170_HP)-2ea44f?style=flat-square)](#)
+[![SW](https://img.shields.io/badge/SW-03G906018EM_0420-f39c12?style=flat-square)](#)
+[![Cal_ID](https://img.shields.io/badge/Cal_ID-6576286119_%2F_SN1K540-9b59b6?style=flat-square)](#)
+[![Stage_1+](https://img.shields.io/badge/Stage_1%2B-226_HP_%2F_435_Nm-ff4d4f?style=flat-square)](#)
+[![Checksum](https://img.shields.io/badge/CRC--32-0x46DD1863_Verified-3fb950?style=flat-square)](#)
+
 Complete reverse-engineered calibration package, technical documentation, dyno curves, and A2L/WinOLS definitions for the **VW Passat B6 2.0 TDI 16V PD (BMR — 170 HP / 350 Nm)** equipped with a **Siemens VDO PPD1.2** ECU (`03G906018EM` v0420, Calibration ID `6576286119` / `SN1K540`).
 
 ## Highlights (`Stage 1+` Calibration)
@@ -84,5 +91,13 @@ TORQUE (Nm)                                                             POWER (H
 | `Passat_2.0_TDI_170_PPD1.2_Rapor.md` | Turkish technical report |
 | `assets/dyno_chart.png` | Crank Torque (Nm) & Power (HP) dyno comparison chart (Stock vs. Stage 1 vs. Stage 1+) |
 | `sn09103b.a2l`, `SN09503B.a2l`, `VAG_2.0_TDI_Siemens.ols` | Siemens PPD A2L / WinOLS reference files |
+
+## ECU, Engine & Cross-Reference Index
+
+- **ECU Family:** Siemens VDO / Continental **PPD1.2** (`PPD1.1` / `PPD1.2` / `PPD1.3` / `PPD1.5` — Motorola / Freescale **MPC561 / MPC562** PowerPC, Big-Endian 16-bit)
+- **VAG Software & Calibration IDs:** `03G906018EM` (`0420`), `6576286119`, `SN1K540`, `CASN1K54.DAT`, `5WP45562`, `SN09103B`, `SN09503B`, `S04EG020`
+- **VAG 2.0 TDI 16V Piezo PD Engines:** `BMR` (170 HP Passat B6), `BMN` (170 HP Golf MK5 GT / Audi A3 8P / Leon FR), `BRD` (170 HP Audi A4 B7), `BUY` (163 HP), `BKP` (140 HP PPD1.5), `BUZ`
+- **Documented A2L Symbols & Subsystems:** `ip_tqi_tql_bas`, `ip_fac_tq_req_dri`, `ip_tq_gb_prot`, `ip_mf_bas`, `ip_mf_slm_bas`, `ip_doi_main1`, `ldpm_mf_ip_doi_main1`, `ip_soi_main1`, `ip_map_sp_bas`, `c_state_rgn_pf`, `id_conf_inj_rgn_1`, `id_conf_inj_rgn_2`, `c_n_max_mt`, `c_add_n_max_fcut`, `ip_tqi_lim_clu_prot`, `c_err_clas` (`fmy_id_*`), `SUPP_AN_LIM`
+- **Compatible Flash & Calibration Tools:** WinOLS (`.ols` / `.a2l` / DAMOS), KESS v2 (K-Suite OBD), K-TAG / BDM100, MPPS, PCMflash
 
 > **Disclaimer:** For off-road, motorsport, and educational reverse-engineering use only. Running DPF-Off calibrations requires physical DPF removal (downpipe) and must comply with local emissions regulations. Always back up your ECU before flashing.
