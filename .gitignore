@@ -1,0 +1,14 @@
+# Extracted reference archive (103 MB, includes macOS ._ metadata files)
+Siemens PPD/
+Siemens PPD-*.zip
+
+# Duplicate ID file & legacy pre-Stage1+ PDF
+Pi kamera.txt
+Passat_2.0_TDI_170_PPD1.2_Rapor.pdf
+
+# OS / Editor / Python junk
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+._*
